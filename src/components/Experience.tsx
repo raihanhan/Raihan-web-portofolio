@@ -1,7 +1,7 @@
 export default function Experience() {
   const experiences = [
     {
-      role: "It Support",
+      role: "IT Support",
       company: "SMAN 7 Yogyakarta",
       duration: "July - August 2023",
       description: [

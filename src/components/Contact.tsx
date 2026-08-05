@@ -31,6 +31,7 @@ export default function Contact() {
         setStatus("error");
       }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setStatus("error");
     }
@@ -128,7 +129,7 @@ export default function Contact() {
           
           <ul className="flex flex-col gap-4 mb-10">
             <li>
-              <a href="https://linkedin.com/in/usernameanda" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-blue-600 transition font-medium group">
+              <a href="https://www.linkedin.com/in/habib-aulia-raihan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-blue-600 transition font-medium group">
                 <span className="w-10 h-10 flex items-center justify-center bg-blue-50 text-blue-600 rounded-full group-hover:bg-blue-600 group-hover:text-white transition">
                   <FaLinkedin className="w-5 h-5" />
                 </span>
@@ -136,7 +137,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/usernameanda" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-slate-900 transition font-medium group">
+              <a href="https://github.com/raihanhan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-slate-900 transition font-medium group">
                 <span className="w-10 h-10 flex items-center justify-center bg-slate-100 text-slate-700 rounded-full group-hover:bg-slate-900 group-hover:text-white transition">
                   <FaGithub className="w-5 h-5" />
                 </span>
@@ -144,7 +145,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-green-500 transition font-medium group">
+              <a href="https://wa.me/6281329679207" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-green-500 transition font-medium group">
               <span className="w-10 h-10 flex items-center justify-center bg-green-50 text-green-500 rounded-full group-hover:bg-green-500 group-hover:text-white transition">
               <FaWhatsapp className="w-5 h-5" />
               </span>
