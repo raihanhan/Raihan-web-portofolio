@@ -1,18 +1,14 @@
+import {FaGithub } from "react-icons/fa";
 export default function Projects() {
 
   const projectData = [
     {
-      title: "Analisis Churn Pelanggan E-Commerce",
-      description: "Menganalisis perilaku pelanggan untuk memprediksi churn menggunakan SQL dan memvisualisasikannya di Tableau. Menemukan bahwa biaya pengiriman adalah faktor utama churn.",
-      tools: ["SQL", "Tableau", "Excel"],
-      link: "#"
+      title: "e-Commerce Customer Churn Analysis Dashboard",
+      description: "An interactive Streamlit dashboard analyzing 200,000 e-commerce customer records to understand churn behavior, identify the strongest churn drivers, and predict churn risk for individual customers.",
+      tools: ["Streamlit", "Python", "Pandas", "Scikit-learn", "Plotly", "Decision Tree"],
+      link: "https://ecommerce-customer-churn-dashboard.streamlit.app/",
+      docLink: "https://github.com/raihanhan/E-Commerce-Customer-Churn-Dashboard"
     },
-    {
-      title: "Optimasi Inventaris Toko Retail",
-      description: "Membersihkan dan menganalisis dataset penjualan 2 tahun menggunakan Python Pandas untuk memberikan rekomendasi restock mingguan.",
-      tools: ["Python", "Pandas", "Matplotlib"],
-      link: "#"
-    }
   ];
 
   return (
@@ -21,7 +17,7 @@ export default function Projects() {
       
       <div className="grid md:grid-cols-2 gap-6">
         {projectData.map((project, index) => (
-          <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+          <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col">
             <h4 className="font-bold text-lg mb-2 text-slate-900">{project.title}</h4>
             <p className="text-slate-600 text-sm mb-4 leading-relaxed">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -31,9 +27,15 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <a href={project.link} className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition underline decoration-2 decoration-blue-200 underline-offset-4">
-              Baca Studi Kasus &rarr;
-            </a>
+            <div className="flex items-center justify-between mt-auto pt-2">
+              <a href={project.link} className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition underline decoration-2 decoration-blue-200 underline-offset-4">
+                Baca Studi Kasus &rarr;
+              </a>
+              <a href={project.docLink} className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900 transition underline decoration-2 decoration-slate-200 hover:decoration-slate-300 underline-offset-4">
+                <FaGithub className="w-5 h-5" />
+                <span>Github Repo &rarr;</span>
+              </a>
+            </div>
           </div>
         ))}
       </div>
