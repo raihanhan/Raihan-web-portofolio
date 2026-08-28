@@ -2,33 +2,44 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="hero" className="max-w-4xl mx-auto px-6 pt-40 pb-24 flex flex-col items-center text-center">
-      
+    <section id="hero" className="relative max-w-6xl mx-auto px-6 pt-36 pb-28 md:pt-44 md:pb-36">
+      <div className="dot-grid absolute -right-20 top-28 h-44 w-44 rounded-full opacity-60" aria-hidden="true" />
+      <div className="absolute left-0 top-40 h-24 w-1 bg-[#1d4ed8]" aria-hidden="true" />
 
-      <div className="relative w-28 h-28 mb-8 rounded-full overflow-hidden border border-slate-200 shadow-sm">
+      <div className="relative z-10 grid items-center gap-12 md:grid-cols-[1.15fr_0.85fr]">
+        <div className="max-w-3xl">
+          <p className="section-label mb-6">Open to work</p>
+          <h1 className="display-font max-w-3xl text-5xl font-bold leading-[0.95] text-[#102a43] md:text-7xl">
+            Turning raw data into <span className="text-[#1d4ed8]">clear decisions.</span>
+          </h1>
+          <p className="mt-7 max-w-xl text-base leading-8 text-[#647574] md:text-lg">
+            Hi, I&apos;m <strong className="text-[#102a43]">Raihan</strong> — a fresh graduate in Information Technology, passionate about machine learning, data analysis and visualization.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center gap-4">
+            <a href="/CV.pdf" download className="inline-flex items-center gap-3 rounded-full bg-[#1d4ed8] px-6 py-3.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(29,78,216,0.25)] transition hover:-translate-y-0.5 hover:bg-[#102a43]">
+              Download resume <span aria-hidden="true">↓</span>
+            </a>
+            <a href="#projects" className="text-sm font-bold text-[#102a43] underline decoration-[#1d4ed8] decoration-2 underline-offset-8 hover:text-[#1d4ed8] transition">
+              Explore my work <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-xs md:justify-self-end">
+          <div className="absolute -inset-4 rounded-4xl border border-[#9cc9f5] rotate-6" aria-hidden="true" />
+          <div className="relative aspect-4/5 overflow-hidden rounded-4xl bg-[#d6e1ee] shadow-[12px_12px_0_#1d4ed8]">
         <Image 
         src="/profile.jpg"
         alt="Foto Profil Saya"
         fill
-        className="object-cover grayscale hover:grayscale-0 transition duration-500"
-        sizes="(max-width: 768px) 112px, 112px" 
+        className="object-cover grayscale-35 transition duration-500 hover:grayscale-0"
+        sizes="(max-width: 768px) 320px, 360px" 
         priority 
         />
+          </div>
+          <p className="absolute -bottom-9 -left-8 rotate-[-8deg] font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#1d4ed8]">Kebumen, Central Java</p>
+        </div>
       </div>
-
-      <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
-        Hi! I&apos;am <span className="text-blue-600">Raihan</span>
-      </h2>
-      <p className="text-base md:text-lg text-slate-500 max-w-xl mb-8 leading-relaxed font-normal">
-        a Fresh Graduate Master of Information Technology with a passion for machine learning, data analysis and visualization.
-      </p>
-        <a 
-          href="/CV.pdf" 
-          download 
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-block shadow-md"
-          >
-            Download Resume
-        </a>
     </section>
   );
 }

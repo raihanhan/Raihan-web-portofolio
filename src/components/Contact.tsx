@@ -38,12 +38,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
-      <h3 className="text-2xl font-bold mb-12 text-center text-slate-900">Reach me</h3>
+    <section id="contact" className="max-w-6xl mx-auto px-6 py-24">
+      <p className="section-label mb-3 text-center">06 / Start a conversation</p>
+      <h3 className="display-font text-4xl font-bold mb-12 text-center text-[#102a43]">Let&apos;s make data useful.</h3>
       
       <div className="grid md:grid-cols-2 gap-12">
 
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative">
+        <div className="bg-white p-8 rounded-2xl shadow-sm border border-[#d6e1ee] relative">
           <h4 className="font-bold text-lg mb-6 text-slate-900">Send a Message</h4>
           
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -104,7 +105,7 @@ export default function Contact() {
               type="submit" 
               disabled={status === "loading"}
               className={`px-6 py-3 rounded-lg font-semibold transition mt-2 shadow-md text-white
-                ${status === "loading" ? "bg-slate-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"}
+                ${status === "loading" ? "bg-slate-400 cursor-not-allowed" : "bg-[#1d4ed8] hover:bg-[#102a43]"}
               `}
             >
               {status === "loading" ? "Sending..." : "Send Message"}
@@ -130,7 +131,7 @@ export default function Contact() {
           <ul className="flex flex-col gap-4 mb-10">
             <li>
               <a href="https://www.linkedin.com/in/habib-aulia-raihan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-600 hover:text-blue-600 transition font-medium group">
-                <span className="w-10 h-10 flex items-center justify-center bg-blue-50 text-blue-600 rounded-full group-hover:bg-blue-600 group-hover:text-white transition">
+                <span className="w-10 h-10 flex items-center justify-center bg-[#e6eefb] text-[#1d4ed8] rounded-full group-hover:bg-[#1d4ed8] group-hover:text-white transition">
                   <FaLinkedin className="w-5 h-5" />
                 </span>
                 LinkedIn

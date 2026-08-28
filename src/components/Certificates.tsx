@@ -1,14 +1,14 @@
 export default function Certificates() {
   const certificates = [
     {
-      name: "IBM Data Analytics Professional Certificate",
-      issuer: "Coursera",
+      name: "Data Analytics Professional Certificate",
+      issuer: "IBM",
       date: "July 2026",
       link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/A5R30QT5GK78"
     },
     {
-      name: "Microsoft Excel Professional Certificate",
-      issuer: "Coursera",
+      name: "Excel Professional Certificate",
+      issuer: "Microsoft",
       date: "August 2026",
       link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/NVMTPX3RO63V"
     },
@@ -27,15 +27,16 @@ export default function Certificates() {
   ];
 
   return (
-    <section id="certificates" className="max-w-5xl mx-auto px-6 py-20 border-t border-slate-200">
-      <h3 className="text-2xl font-bold mb-10 text-center text-slate-900">Certificates & Courses</h3>
+    <section id="certificates" className="max-w-6xl mx-auto px-6 py-24 border-t border-[#d6e1ee]">
+      <p className="section-label mb-3 text-center">05 / Always learning</p>
+      <h3 className="display-font text-4xl font-bold mb-10 text-center text-[#102a43]">Certificates & Courses</h3>
       
       <div className="grid md:grid-cols-2 gap-6">
         {certificates.map((cert, index) => (
-          <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+          <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-[#d6e1ee] flex flex-col justify-between hover:-translate-y-1 hover:shadow-lg transition">
             <div>
               <h4 className="font-bold text-lg text-slate-900 mb-1">{cert.name}</h4>
-              <p className="text-blue-600 font-medium mb-4">{cert.issuer}</p>
+              <p className="text-[#1d4ed8] font-medium mb-4">{cert.issuer}</p>
             </div>
             <div className="flex justify-between items-center mt-4 pt-4 border-t border-slate-100">
               <span className="text-sm text-slate-500">{cert.date}</span>
