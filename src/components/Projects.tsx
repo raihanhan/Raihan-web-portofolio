@@ -9,6 +9,13 @@ export default function Projects() {
       link: "https://ecommerce-customer-churn-dashboard.streamlit.app/",
       docLink: "https://github.com/raihanhan/E-Commerce-Customer-Churn-Dashboard"
     },
+    {
+      title: "Gayanara: Toko Fashion Online Dashboard",
+      description: "An interactive Tableu dashboard analyzing store records to understand sales performance.",
+      tools: ["Tableu", "Excel", "Data Analysis"],
+      link: "https://public.tableau.com/views/GayanaraTokoFashionOnline/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+      docLink: "https://github.com/raihanhan/Gayanara-Toko-Fashion-Online-"
+    },
   ];
 
   return (
