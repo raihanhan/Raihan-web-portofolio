@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <section id="contact" className="max-w-6xl mx-auto px-6 py-24">
       <p className="section-label mb-3 text-center">06 / Start a conversation</p>
-      <h3 className="display-font text-4xl font-bold mb-12 text-center text-[#102a43]">Let&apos;s make data useful.</h3>
+      <h3 className="display-font text-4xl font-bold mb-12 text-center text-[#102a43]">Let&apos;s solve problem - with data or system.</h3>
       
       <div className="grid md:grid-cols-2 gap-12">
 
