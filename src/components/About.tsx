@@ -35,10 +35,9 @@ export default function About() {
       <h3 className="display-font text-4xl font-bold mb-6 text-center text-[#102a43]">Curious by nature,<br />rigorous by practice.</h3>
       <div className="text-center text-[#647574]">
         <p className="max-w-3xl mx-auto mb-10 leading-relaxed">
-          Informatics fresh graduate with a strong foundation in data analysis, 
-          machine learning, and text analytics, 
-          backed by two SINTA-indexed publications and hands-on sentiment classification projects. 
-          Seeking a Data Analyst role to apply analytical and technical skills to real business problems.
+         Focus on building a career foundation in the field of technology, 
+         with an interest in data analysis and systems/network support, 
+         two areas that both rely on systematic thinking to solve problems.
         </p>
 
 
