@@ -1,4 +1,4 @@
-## My Personal Portfolio 
+# My Personal Portfolio 
 
 ![Framework](https://img.shields.io/badge/Framework-NextJS-black?logo=nextdotjs)
 ![Language](https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript)
