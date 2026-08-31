@@ -1,13 +1,35 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #f4f7fb;
+  --background-strong: #edf4ff;
   --foreground: #102a43;
-  --ink: #102a43;
+  --foreground-soft: #647574;
   --muted: #52677d;
   --blue: #1d4ed8;
+  --blue-soft: #e6eefb;
   --sky: #9cc9f5;
   --line: #d6e1ee;
+  --card: rgba(255, 255, 255, 0.9);
+  --card-strong: #ffffff;
+  --chip: #edf5ff;
+}
+
+.dark {
+  --background: #0b1220;
+  --background-strong: #101b2c;
+  --foreground: #edf4ff;
+  --foreground-soft: #b7c6d8;
+  --muted: #9fb4cc;
+  --blue: #8cb4ff;
+  --blue-soft: #16283d;
+  --sky: #2d4e7a;
+  --line: #1d2d3d;
+  --card: rgba(15, 23, 35, 0.88);
+  --card-strong: #121d2d;
+  --chip: #172a3d;
 }
 
 @theme inline {
@@ -21,6 +43,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
@@ -45,6 +68,10 @@ section {
 .dot-grid {
   background-image: radial-gradient(#b8cce3 1px, transparent 1px);
   background-size: 18px 18px;
+}
+
+.dark .dot-grid {
+  background-image: radial-gradient(rgba(132, 153, 184, 0.35) 1px, transparent 1px);
 }
 
 .section-label {

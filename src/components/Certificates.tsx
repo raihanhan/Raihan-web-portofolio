@@ -1,6 +1,12 @@
 export default function Certificates() {
   const certificates = [
     {
+      name: "Google IT Support Professional Certificate",
+      issuer: "Google",
+      date: "August 2026",
+      link: "https://www.coursera.org/account/accomplishments/professional-cert/Y58M9TTW3Z8Q"
+    },
+    {
       name: "Data Analytics Professional Certificate",
       issuer: "IBM",
       date: "July 2026",
@@ -25,26 +31,26 @@ export default function Certificates() {
       link: "https://media.licdn.com/dms/image/v2/D562DAQG6_0uKmvKwzg/profile-treasury-document-cover-images_1280/profile-treasury-document-cover-images_1280/0/1715398558690?e=1786500000&v=beta&t=45GelqzETYS9V2_cg-JCuZ4V79vjcTyNlWTTQHkjtR4"
     }
   ];
-
+ 
   return (
-    <section id="certificates" className="max-w-6xl mx-auto px-6 py-24 border-t border-[#d6e1ee]">
+    <section id="certificates" className="mx-auto max-w-6xl border-t border-[#d6e1ee] px-6 py-24 dark:border-slate-800">
       <p className="section-label mb-3 text-center">05 / Always learning</p>
-      <h3 className="display-font text-4xl font-bold mb-10 text-center text-[#102a43]">Certificates & Courses</h3>
+      <h3 className="display-font mb-10 text-center text-4xl font-bold text-[#102a43] dark:text-slate-100">Certificates & Courses</h3>
       
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid gap-6 md:grid-cols-2">
         {certificates.map((cert, index) => (
-          <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-[#d6e1ee] flex flex-col justify-between hover:-translate-y-1 hover:shadow-lg transition">
+          <div key={index} className="flex flex-col justify-between rounded-2xl border border-[#d6e1ee] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:shadow-none">
             <div>
-              <h4 className="font-bold text-lg text-slate-900 mb-1">{cert.name}</h4>
-              <p className="text-[#1d4ed8] font-medium mb-4">{cert.issuer}</p>
+              <h4 className="mb-1 text-lg font-bold text-slate-900 dark:text-slate-100">{cert.name}</h4>
+              <p className="mb-4 font-medium text-[#1d4ed8] dark:text-blue-300">{cert.issuer}</p>
             </div>
-            <div className="flex justify-between items-center mt-4 pt-4 border-t border-slate-100">
-              <span className="text-sm text-slate-500">{cert.date}</span>
+            <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4 dark:border-slate-700">
+              <span className="text-sm text-slate-500 dark:text-slate-300">{cert.date}</span>
               <a 
                 href={cert.link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition underline decoration-2 decoration-blue-200 underline-offset-4"
+                className="text-sm font-semibold text-slate-900 underline decoration-2 decoration-blue-200 underline-offset-4 transition hover:text-blue-600 dark:text-slate-100 dark:decoration-blue-400"
               >
                 View Credentials &rarr;
               </a>

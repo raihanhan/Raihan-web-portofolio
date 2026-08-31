@@ -45,10 +45,10 @@ export default function Publication() {
   return (
     <section
       id="publication"
-      className="max-w-6xl mx-auto px-6 py-24 border-t border-[#d6e1ee]"
+      className="mx-auto max-w-6xl border-t border-[#d6e1ee] px-6 py-24 dark:border-slate-800"
     >
       <p className="section-label mb-3 text-center">04 / Research</p>
-      <h3 className="display-font text-4xl font-bold mb-10 text-center text-[#102a43]">
+      <h3 className="display-font mb-10 text-center text-4xl font-bold text-[#102a43] dark:text-slate-100">
         Publications
       </h3>
 
@@ -56,28 +56,28 @@ export default function Publication() {
         {publications.map((publication) => (
           <article
             key={publication.title}
-            className="flex flex-col rounded-2xl border border-[#d6e1ee] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+            className="flex flex-col rounded-2xl border border-[#d6e1ee] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:shadow-none"
           >
             <div className="mb-5 flex items-center justify-between gap-4">
-              <span className="rounded-full bg-[#e6eefb] px-3 py-1 text-xs font-bold uppercase tracking-widest text-[#1d4ed8]">
+              <span className="rounded-full bg-[#e6eefb] px-3 py-1 text-xs font-bold uppercase tracking-widest text-[#1d4ed8] dark:bg-slate-800 dark:text-blue-300">
                 {publication.type}
               </span>
-              <span className="font-mono text-sm font-semibold text-[#52677d]">
+              <span className="font-mono text-sm font-semibold text-[#52677d] dark:text-slate-300">
                 {publication.year}
               </span>
             </div>
 
-            <h4 className="text-xl font-bold leading-snug text-[#102a43]">
+            <h4 className="text-xl font-bold leading-snug text-[#102a43] dark:text-slate-100">
               {publication.title}
             </h4>
-            <p className="mt-3 text-sm font-semibold text-[#1d4ed8]">
+            <p className="mt-3 text-sm font-semibold text-[#1d4ed8] dark:text-blue-300">
               {publication.authors}
             </p>
-            <p className="mt-1 text-sm text-[#52677d]">{publication.venue}</p>
-            <ul className="mt-5 flex-1 space-y-3 text-sm leading-6 text-[#52677d]">
+            <p className="mt-1 text-sm text-[#52677d] dark:text-slate-300">{publication.venue}</p>
+            <ul className="mt-5 flex-1 space-y-3 text-sm leading-6 text-[#52677d] dark:text-slate-300">
               {Object.entries(publication.description).map(([label, text]) => (
-                <li key={label} className="border-l-2 border-[#9cc9f5] pl-3">
-                  <span className="font-bold capitalize text-[#102a43]">
+                <li key={label} className="border-l-2 border-[#9cc9f5] pl-3 dark:border-blue-500/40">
+                  <span className="font-bold capitalize text-[#102a43] dark:text-slate-100">
                     {label}:
                   </span>{" "}
                   {text}
@@ -89,7 +89,7 @@ export default function Publication() {
               href={publication.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 w-fit text-sm font-bold text-[#102a43] underline decoration-[#1d4ed8] decoration-2 underline-offset-8 transition hover:text-[#1d4ed8]"
+              className="mt-6 w-fit text-sm font-bold text-[#102a43] underline decoration-[#1d4ed8] decoration-2 underline-offset-8 transition hover:text-[#1d4ed8] dark:text-slate-100 dark:hover:text-blue-300"
             >
               Read publication <span aria-hidden="true">↗</span>
             </a>

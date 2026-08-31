@@ -19,34 +19,34 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="max-w-6xl mx-auto px-6 py-24 border-t border-[#d6e1ee] bg-white rounded-3xl my-10">
+    <section id="education" className="my-10 mx-auto max-w-6xl rounded-3xl border-t border-[#d6e1ee] bg-white px-6 py-24 dark:border-slate-800 dark:bg-slate-900">
       <p className="section-label mb-3 text-center">04 / Foundations</p>
-      <h3 className="display-font text-4xl font-bold mb-10 text-center text-[#102a43]">Education</h3>
+      <h3 className="display-font mb-10 text-center text-4xl font-bold text-[#102a43] dark:text-slate-100">Education</h3>
       
       <div className="grid grid-cols-1 gap-6">
         {educationData.map((edu, index) => (
-          <div key={index} className="bg-[#f4f7fb] p-8 rounded-2xl shadow-sm border border-[#d6e1ee]">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+          <div key={index} className="rounded-2xl border border-[#d6e1ee] bg-[#f4f7fb] p-8 shadow-sm dark:border-slate-700 dark:bg-slate-950/60">
+            <div className="mb-2 flex flex-col md:flex-row md:items-start md:justify-between">
               <div>
-                <h4 className="text-xl font-bold text-slate-900">{edu.degree}</h4>
-                <p className="text-lg text-slate-700 font-medium">{edu.institution}</p>
+                <h4 className="text-xl font-bold text-slate-900 dark:text-slate-100">{edu.degree}</h4>
+                <p className="text-lg font-medium text-slate-700 dark:text-slate-300">{edu.institution}</p>
               </div>
-              <span className="text-sm font-semibold text-slate-500 mt-2 md:mt-0">
+              <span className="mt-2 text-sm font-semibold text-slate-500 dark:text-slate-400 md:mt-0">
                 {edu.year}
               </span>
             </div>
-            <div className="mt-6 grid gap-4 border-t border-[#d6e1ee] pt-5 md:grid-cols-[0.7fr_1fr]">
+            <div className="mt-6 grid gap-4 border-t border-[#d6e1ee] pt-5 md:grid-cols-[0.7fr_1fr] dark:border-slate-700">
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-[#1d4ed8]">GPA</p>
-                <p className="mt-1 text-sm font-semibold text-[#102a43]">{edu.gpa}</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#1d4ed8] dark:text-blue-300">GPA</p>
+                <p className="mt-1 text-sm font-semibold text-[#102a43] dark:text-slate-100">{edu.gpa}</p>
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-[#1d4ed8]">Concentration</p>
-                <p className="mt-1 text-sm leading-6 text-[#52677d]">{edu.concentration}</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#1d4ed8] dark:text-blue-300">Concentration</p>
+                <p className="mt-1 text-sm leading-6 text-[#52677d] dark:text-slate-300">{edu.concentration}</p>
               </div>
               <div className="md:col-span-2">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#1d4ed8]">Thesis</p>
-                <p className="mt-1 text-sm leading-6 text-[#52677d]">{edu.thesis}</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#1d4ed8] dark:text-blue-300">Thesis</p>
+                <p className="mt-1 text-sm leading-6 text-[#52677d] dark:text-slate-300">{edu.thesis}</p>
               </div>
             </div>
           </div>

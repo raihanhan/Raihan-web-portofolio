@@ -15,23 +15,23 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="max-w-6xl mx-auto px-6 py-24 border-t border-[#d6e1ee]">
+    <section id="experience" className="mx-auto max-w-6xl border-t border-[#d6e1ee] px-6 py-24 dark:border-slate-800">
       <p className="section-label mb-3 text-center">02 / In the field</p>
-      <h3 className="display-font text-4xl font-bold mb-10 text-center text-[#102a43]">Experience</h3>
+      <h3 className="display-font mb-10 text-center text-4xl font-bold text-[#102a43] dark:text-slate-100">Experience</h3>
       
       <div className="flex flex-col gap-6">
         {experiences.map((exp, index) => (
-          <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-[#d6e1ee] hover:-translate-y-1 hover:shadow-lg transition">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+          <div key={index} className="rounded-2xl border border-[#d6e1ee] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900">
+            <div className="mb-4 flex flex-col md:flex-row md:items-start md:justify-between">
               <div>
-                <h4 className="text-xl font-bold text-slate-900">{exp.role}</h4>
-                <p className="text-lg text-[#1d4ed8] font-medium">{exp.company}</p>
+                <h4 className="text-xl font-bold text-slate-900 dark:text-slate-100">{exp.role}</h4>
+                <p className="text-lg font-medium text-[#1d4ed8] dark:text-blue-300">{exp.company}</p>
               </div>
-              <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">
+              <span className="mt-2 w-fit rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-500 dark:bg-slate-800 dark:text-slate-300 md:mt-0">
                 {exp.duration}
               </span>
             </div>
-            <ul className="list-disc list-outside ml-5 text-slate-600 space-y-2">
+            <ul className="ml-5 list-disc list-outside space-y-2 text-slate-600 dark:text-slate-300">
               {exp.description.map((item, idx) => (
                 <li key={idx} className="leading-relaxed">{item}</li>
               ))}

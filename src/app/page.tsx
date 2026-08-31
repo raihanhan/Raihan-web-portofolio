@@ -10,7 +10,7 @@ import Certificates from "@/components/Certificates";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f4f7fb] text-[#102a43] scroll-smooth">
+    <main className="min-h-screen overflow-hidden bg-background text-foreground transition-colors duration-300 scroll-smooth dark:bg-[#07111d] dark:text-slate-100">
       <Navbar />
       <Hero />
       <About />
